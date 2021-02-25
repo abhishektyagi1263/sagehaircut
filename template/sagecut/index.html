@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    index
-  </body>
-</html>
+{% extends "sagecut/base.html" %}
+{% block body_block %}
+{% load static %}
+
+<div class="landingpage landright">
+  <div class="centeredr">
+    <h2 class="headh2">Redefining your
+  barbershop
+  experience</h2>
+  <div class="" style="height:30px;"></div>
+  <h4 class="headh4">We are The barbers you love. Gorgeous
+hair for you, fulfilled dreams for us.</h4>
+    <div class="" style="height:30px;"></div>
+    <a class="bookingbtn" href="{% url 'sagecut:book' %}">Book Appointment</a>
+  </div>
+</div>
+<div class="landingpage landleft">
+  <div class="centered">
+     <img src="{% static "images/heroimg.jpg" %}" alt="something" width="450">
+  </div>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,39 @@
+@media only screen and (min-width: 600px) {
+
+  .landingpage{ height: 100%;
+    width: 70%;
+    position: fixed;
+    z-index: -4;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;}
+    .landright{left: 0;
+    background-color: #9A9E92}
+    .landleft{right: 0;
+    }
+
+  .headh2{font-size:85px; font-weight: bolder;color:white;}
+  .headh4{color:white;}
+  .bookingbtn{padding:17px 40px;background: #363B3F;color:white;text-decoration:none;}
+  .bookingbtn:hover{color: white;border-bottom:0px solid;text-decoration: none;background: #2B2D2E}
+
+  a:visited {
+    color:white;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .centeredr {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+
+  }
+
+}
+/* media query ends  */
