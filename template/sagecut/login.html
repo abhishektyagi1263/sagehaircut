@@ -1,0 +1,28 @@
+{% extends 'sagecut/base.html' %}
+{% block body_block %}
+
+<div class="jumbotron" style="height: 600px; position: relative;">
+  <row>
+  <div class="col-lg-3" style="padding:20px;border-radius:20px;margin: 0;position: absolute; top: 50%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">
+
+  <h3>Login</h3>
+  <form class="" action="{% url 'sagecut:user_login' %}" method="POST">
+    {% csrf_token %}
+    <label for="username">Username:</label>
+    <input class="form-control" type="text" name="username" value="" placeholder="Enter Username">
+    <p></p>
+    <label for="password">Password</label>
+    <input class="form-control" type="password" name="password" placeholder="Enter Password" value="">
+    <p></p>
+    <center>
+    <input class="btn btn-primary col-lg-7" type="submit" name="" value="Login"></center>
+  </form>
+  </div>
+  <div class="col-7">
+
+  </div>
+  </row>
+</div>
+
+
+{% endblock %}

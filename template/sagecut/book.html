@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 {% extends "sagecut/base.html" %}
 {% block body_block %}
-<div class="jumbotron">
-  Book Now!
-</div>
+<div class="" style="text-align:center;height: 40em;position: relative; ">
+      <div style="margin: 0;position: absolute;top: 50%;left: 50%;margin-right: -50%;transform: translate(-50%, -50%);background-color:white; padding:4rem 2rem;border-radius:30px;">
+
+
+    <h6> Book Appointment</h6>
+
+    <form method="POST">
+
+        {{ book_form.as_p }}
+        {% csrf_token %}
+
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+    </div></div>
 
 {% endblock %}

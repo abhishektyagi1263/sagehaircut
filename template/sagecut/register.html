@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends "sagecut/base.html" %}
+{% load static %}
+{% block body_block %}
+<div class="jumbotron" style=" height: 600px;
+  position: relative;">
+  <div class="" style="padding:20px;border-radius:20px;margin: 0;position: absolute; top: 50%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">
+
+
+  {% if registered %}
+  <h3>You Got Registered! Now Login</h3>
+  {%else%}
+  <h5>Fill out the form</h5>
+
+    <form method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ user_form.as_p }}
+      {{ profile_form.as_p }}
+      <center>
+      <input type="submit" name="" class="btn btn-primary col-lg-5" value="Register">
+      </center>
+
+    </form>
+
+
+  {% endif %}
+  </div>
+</div>
+{% endblock %}

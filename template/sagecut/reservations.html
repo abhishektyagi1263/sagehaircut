@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends "sagecut/base.html" %}
+{% block body_block %}
+<h1 style="text-align:center:font-weight:700">Reservations</h1>
+<table class="table table-borderless">
+  <thead>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Date</th>
+    <th>Time</th>
+  </thead>
+  <tbody>
+    {% for acc in access_records %}
+    <tr>
+      <td>{{acc.first_name}}</td>
+      <td>{{acc.email}}</td>
+      <td>{{acc.set_date}}</td>
+      <td>{{acc.set_time}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

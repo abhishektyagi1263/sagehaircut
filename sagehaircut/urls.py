@@ -22,4 +22,6 @@ urlpatterns = [
     url(r'^$',views.home,name='home'),
     path('admin/', admin.site.urls),
     url(r'^sagecut/',include('sagecut.urls')),
+    url(r'^logout/$',views.user_logout,name='logout'),
+    url(r'^special/',views.special,name='special'),
 ]
