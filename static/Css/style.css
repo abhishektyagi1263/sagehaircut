@@ -3,11 +3,10 @@
   .landingpage{ height: 44rem;
     display: flex;
   flex-direction: row;
-    background-color: #9A9E92;}
+    background: linear-gradient(to right, #9A9E92 80%, white 20%);}
     .landright{flex: 60%;}
     .landleft{flex: 40%;
     }
-
   .headh2{font-size:85px; font-weight: bolder;color:white;}
   .headh4{color:white;}
   .bookingbtn{padding:14px 40px;background: #363B3F;color:white;text-decoration:none;}
@@ -32,5 +31,18 @@
 }
 .sec h2{font-size: 50px; font-weight: 700;}
 .sec h6{font-size:30;font-weight: normal;margin: 0px 400px;}
+.menu{background-color: #929490}
+.menu h1{text-align: center;padding-top:5rem;color:  #27211C;font-size: 70px;}
+.service{text-align: center;color: #27211C;}
+.service .head{font-size: 40px;}
+.service .body{margin:1% 14% 15%;}
+.collage{
+  background: black;
 }
+.imgs{text-align: center; padding: 200px 0px;}
+.img{width:270px;height:400px;object-fit: cover;}
+
+}
+
+
 /* media query ends  */
