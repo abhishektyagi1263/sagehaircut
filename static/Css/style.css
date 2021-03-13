@@ -39,7 +39,8 @@
 .collage{
   background: black;
 }
-.imgs{text-align: center; padding: 200px 0px;}
+
+.imgs{text-align: center; padding-bottom: 200px;margin:0;}
 .img{width:270px;height:400px;object-fit: cover;}
 
 }
