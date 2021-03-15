@@ -2,7 +2,7 @@
 {% extends "sagecut/base.html" %}
 {% block body_block %}
 {% load static %}
-<div class="landingpage" style="">
+<div class="landingpage droppage" style="">
 
 
 <div class=" landright">
@@ -10,8 +10,8 @@
     <h2 class="headh2">Redefining your
   barbershop
   experience</h2>
-  <div class="" style="height:30px;"></div>
-  <h4 class="headh4">We are The barbers you love. Gorgeous
+  <div class="noned" style="height:30px;"></div>
+  <h4 class="headh4">Gorgeous
 hair for you, fulfilled dreams for us.</h4>
     <div class="" style="height:30px;"></div>
     <a class="bookingbtn" href="{% url 'sagecut:book' %}">Book Appointment</a>
@@ -24,53 +24,73 @@ hair for you, fulfilled dreams for us.</h4>
 
 </div>
 </div>
+<!-- product -->
 
+
+
+<div class="product">
+  <div class="productleft"><h2>Our Products</h2>
+  <h4>We’ve been providing the traditional barbershop experience by ­setting a venue where dudes can relax, and get groomed.</h4>
+  <h6>Check Our Products</h6></div>
+  <div class="productright">
+    <img src="{% static "images/product.png" %}" alt="" width="300px">
+  </div>
+</div>
+
+<!-- second -->
 <div class="second">
   <div class="sec">
     <h2>Cherish Your time with us</h2>
     <h6>We’ve been providing the traditional barbershop experience by ­setting a venue where dudes can relax, and get groomed. Our approach is offering simple and straightforward services that are delivered well, and a vibe that is curated for the discerning man.</h6>
   </div>
-
 </div>
+  <!-- menu -->
+
 <div class="menu">
-  <h1>Our services</h1>
+  <div class="serv">
+
+    <h2>Services</h2>
+    <h6>We cut hair, not corners.</h6>
+  </div>
+
   <section>
     <div class="row">
-    <div class="service col-lg-6">
+    <div class="service col-lg-4">
       <h4 class="head">Classic Cut &#8377;60</h4>
       <p class="body">Relax while your barber achieves your tailored look. If you’re
 looking for a bald fade or if your hair is currently longer than
 earlobe length please book from our other options.</p>
 
     </div>
-    <div class="service col-lg-6">
+    <div class="service col-lg-4">
       <h4 class="head">Bread Trim &#8377;30 </h4>
       <p class="body">Let your barber apply their artistry to help you create the
 perfectly shaped beard or mustache style you envision.</p>
 
-</div></div>
-    <div class="row">
-    <div class="service col-lg-6">
+</div>
+
+    <div class="service col-lg-4">
       <h4 class="head">Long Cut &#8377;85</h4>
       <p class="body">If your hair is currently past your ear lobes, this is the service
 for you; whether you’re keeping your long locks or chopping
 them off for a new look.</p>
 
-    </div>
-    <div class="service col-lg-6">
+    </div></div>
+    <div class="row">
+    <div class="service col-lg-4">
       <h4 class="head">Shave &#8377;60</h4>
       <p class="body">Experience a traditional hot towel shave with a straight razor
 and warm shaving cream that will leave your face smooth
 to the touch.</p>
 
-</div></div>
+</div>
     <!-- <div class="service">
       <h4 class="head"></h4>
       <p class="body"></p>
       <h6 class="price">&#8377;</h6>
     </div> -->
-    <div class="row">
-    <div class="service col-lg-6">
+
+    <div class="service col-lg-4">
       <h4 class="head">Head Massage &#8377;60</h4>
       <p class="body">A head massage may help relieve stress and reduce tension.
 It may also ease migraine or headache pain, lower blood
@@ -78,7 +98,7 @@ pressure, improve circulation to your head and neck, and
 promote hair growth.</p>
 </div>
 
-<div class="service col-lg-6">
+<div class="service col-lg-4">
   <h4 class="head">Bread Trim &#8377;30</h4>
   <p class="body">Experience a traditional hot towel shave with a straight razor
 and warm shaving cream that will leave your face smooth
@@ -90,6 +110,7 @@ to the touch.</p>
 
 <div class="collage">
   <h2 class="cherish" style="font-size: 50px; font-weight: 700; color:white; text-align: center;padding-top:5rem;">Cherish Your time with us</h2>
+<p></p>
   <div class="imgs">
   <img class="img" src="{% static "images/img1.png" %}" alt="Pineapple" >
   <img class="img" src="{% static "images/img2-min.jpg" %}" alt="Pineapple" >
@@ -100,7 +121,7 @@ to the touch.</p>
   <img class="img" src="{% static "images/img2-min.jpg" %}" alt="Pineapple" >
   <img class="img" src="{% static "images/img3-min.jpg" %}" alt="Pineapple" >
   <img class="img" src="{% static "images/img4-min.jpg" %}" alt="Pineapple">
-      </div>
+  </div>
 
 </div>
 

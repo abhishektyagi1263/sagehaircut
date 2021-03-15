@@ -1,39 +1,55 @@
-@media only screen and (min-width: 600px) {
 
   .landingpage{ height: 44rem;
     display: flex;
   flex-direction: row;
-    background: linear-gradient(to right, #9A9E92 80%, white 20%);}
-    .landright{flex: 60%;}
-    .landleft{flex: 40%;
     }
-  .headh2{font-size:85px; font-weight: bolder;color:white;}
-  .headh4{color:white;}
-  .bookingbtn{padding:14px 40px;background: #363B3F;color:white;text-decoration:none;}
+  .landright{flex: 60%;}
+  .landleft{flex: 40%;
+    }
+  .droppage{background: linear-gradient(to right, #9A9E92 80%, white 20%);}
+  .headh2{font-size:clamp(18px, 8vw, 85px); font-weight: bolder;color:white;}
+  .headh4{color:white; font-size: 24px}
+  .bookingbtn{padding:2% 5%;background: #363B3F;color:white;text-decoration:none;}
   .bookingbtn:hover{color: white;border-bottom:0px solid;text-decoration: none;background: #2B2D2E}
 
   a:visited {
     color:white;
   }
-  .centeredr{ margin:40px 80px;}
+
+.centeredr{padding: 3% 10%;}
+
+    /* section 2 */
+  .second{height: 550px;background-color: #27211C; position: relative;color: white;}
+  .sec{
+     text-align: center;position: absolute; margin: 0;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%)
+  }
+  .sec h2{font-size:clamp(28px, 8vw, 60px); font-weight: 700;}
+  .sec h6{font-size:30;font-weight: normal;margin: 0 20%;}
+/* products */
+.product{ height: 30rem;
+  display: flex;
+flex-direction: row;
+  background:#929490}
+.productright{flex:50%;text-align: center;padding-top: 5rem}
+.productright img{ width: 100%;
+  height: auto;}
+.productleft{flex:50%;color:white;padding: 4rem 4rem;}
+.productleft h2{font-size:clamp(28px, 8vw, 60px);font-weight: bolder;}
+.productleft h4{font-size:clamp(16px, 8vw, 28px);}
+.product h6{font-size: 28px;}
 
 
 
+.menu{background-color: #DDE0DA;color:#535452;}
+.serv{text-align: center;padding:4rem 12rem;}
+.serv h6{padding:0 14rem}
+.serv h2{font-size:clamp(28px, 8vw, 60px);font-weight: bolder;}
 
-  /* section 2 */
-.second{height: 550px;background-color: #27211C; position: relative;color: white;}
-.sec{
-   text-align: center;position: absolute; margin: 0;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
-.sec h2{font-size: 50px; font-weight: 700;}
-.sec h6{font-size:30;font-weight: normal;margin: 0px 400px;}
-.menu{background-color: #929490}
-.menu h1{text-align: center;padding-top:5rem;color:  #27211C;font-size: 70px;}
-.service{text-align: center;color: #27211C;}
+.service{text-align: center;}
 .service .head{font-size: 40px;}
 .service .body{margin:1% 14% 15%;}
 .collage{
@@ -42,6 +58,51 @@
 
 .imgs{text-align: center; padding-bottom: 200px;margin:0;}
 .img{width:270px;height:400px;object-fit: cover;}
+
+
+@media only screen and (max-width: 600px) {
+.landingpage{height: 100vh;}
+.landright{
+  text-align: center;
+  background: url("/static/images/heroimg-min.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.centeredr{
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin: 0;
+}
+.headh2{font-size: 24px;}
+.headh4{font-size: 16px}
+.noned{display:none;}
+.bookingbtn{padding:5% 5%;}
+.landleft{
+  display: none;
+}
+
+
+/* products */
+.product{flex-direction: column;height: 80vh;}
+.productright img{ width: 200px;
+  height: auto;}
+.productleft{flex:50%;color:white;padding: 2rem 1rem; text-align: center;}
+.productleft h4{font-size: 16px;}
+.productleft h6{font-size: 16px;}
+/* menu */
+
+/* service */
+.serv{text-align: center;padding:4%;color: #27211C;}
+.serv h6{padding:0 1rem}
+
+.img{width:100px;height:170px;object-fit: cover;}
 
 }
 
