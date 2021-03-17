@@ -18,7 +18,7 @@ hair for you, fulfilled dreams for us.</h4>
   </div>
 </div>
 <div class=" landleft">
-  <div class="">
+  <div class="hero">
      <img class="centered" src="{% static "images/heroimg.jpg" %}" alt="something" width="450">
   </div>
 
@@ -37,48 +37,43 @@ hair for you, fulfilled dreams for us.</h4>
   </div>
 </div>
 
-<!-- second -->
-<div class="second">
-  <div class="sec">
-    <h2>Cherish Your time with us</h2>
-    <h6>We’ve been providing the traditional barbershop experience by ­setting a venue where dudes can relax, and get groomed. Our approach is offering simple and straightforward services that are delivered well, and a vibe that is curated for the discerning man.</h6>
-  </div>
-</div>
   <!-- menu -->
 
-<div class="menu">
+<div class="menu" style="z-index:40;">
   <div class="serv">
 
     <h2>Services</h2>
     <h6>We cut hair, not corners.</h6>
   </div>
 
-  <section>
+  <section class="section3">
     <div class="row">
-    <div class="service col-lg-4">
-      <h4 class="head">Classic Cut &#8377;60</h4>
+    <div class="card2 col-lg-3">
+      <h3 class="head">Classic Cut &#8377;60</h3>
+      <span class="go-corner"style="">#Bestseller</span>
       <p class="body">Relax while your barber achieves your tailored look. If you’re
 looking for a bald fade or if your hair is currently longer than
 earlobe length please book from our other options.</p>
 
     </div>
-    <div class="service col-lg-4">
-      <h4 class="head">Bread Trim &#8377;30 </h4>
+    <div class="card2 col-lg-3">
+      <h3 class="head">Bread Trim &#8377;30 </h3>
+        <span class="go-corner"style="">#Bestseller</span>
       <p class="body">Let your barber apply their artistry to help you create the
 perfectly shaped beard or mustache style you envision.</p>
 
 </div>
 
-    <div class="service col-lg-4">
-      <h4 class="head">Long Cut &#8377;85</h4>
+    <div class="card2 col-lg-3">
+      <h3 class="head">Long Cut &#8377;85</h3>
       <p class="body">If your hair is currently past your ear lobes, this is the service
 for you; whether you’re keeping your long locks or chopping
 them off for a new look.</p>
 
     </div></div>
     <div class="row">
-    <div class="service col-lg-4">
-      <h4 class="head">Shave &#8377;60</h4>
+    <div class="card2 col-lg-3">
+      <h3 class="head">Shave &#8377;60</h3>
       <p class="body">Experience a traditional hot towel shave with a straight razor
 and warm shaving cream that will leave your face smooth
 to the touch.</p>
@@ -90,17 +85,46 @@ to the touch.</p>
       <h6 class="price">&#8377;</h6>
     </div> -->
 
-    <div class="service col-lg-4">
-      <h4 class="head">Head Massage &#8377;60</h4>
+    <div class="card2 col-lg-3">
+      <h3 class="head">Head Massage &#8377;60</h3>
       <p class="body">A head massage may help relieve stress and reduce tension.
 It may also ease migraine or headache pain, lower blood
 pressure, improve circulation to your head and neck, and
 promote hair growth.</p>
 </div>
 
-<div class="service col-lg-4">
-  <h4 class="head">Bread Trim &#8377;30</h4>
+<div class="card2 col-lg-3">
+  <h3 class="head">Bread Trim &#8377;30</h3>
   <p class="body">Experience a traditional hot towel shave with a straight razor
+and warm shaving cream that will leave your face smooth
+to the touch.</p>
+
+</div></div>
+<div class="row">
+<div class="card2 col-lg-3">
+  <h3 class="head">Shave &#8377;60</h3>
+  <p class="body">Experience a traditional hot towel shave with a straight razor
+and warm shaving cream that will leave your face smooth
+to the touch.</p>
+
+</div>
+<!-- <div class="service">
+  <h4 class="head"></h4>
+  <p class="body"></p>
+  <h6 class="price">&#8377;</h6>
+</div> -->
+
+<div class="card2 col-lg-3">
+  <h3 class="head">Head Massage &#8377;60</h3>
+  <p class="body">A head massage may help relieve stress and reduce tension.
+It may also ease migraine or headache pain, lower blood
+pressure, improve circulation to your head and neck, and
+promote hair growth.</p>
+</div>
+
+<div class="card2 col-lg-3">
+<h3 class="head">Bread Trim &#8377;30</h3>
+<p class="body">Experience a traditional hot towel shave with a straight razor
 and warm shaving cream that will leave your face smooth
 to the touch.</p>
 
@@ -125,6 +149,10 @@ to the touch.</p>
 
 </div>
 
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.js" integrity="sha512-lpKqZ6ev3aDbtURjo0T1GEL243VzqEhZmYcZMxqebUubn0RkdFYpa4qrZcTweCqCX+BEkBXWdQw3QGM9tuz7Pw==" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  const hero = document.querySelector('.hero');
+  const t1 = new TimelineMax();
+  t1.fromTo(hero,1,{height:"0%"}, {height:"80%", ease:Power2.InOut});
+</script>
 {% endblock %}
